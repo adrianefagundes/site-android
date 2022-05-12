@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;700&display=swap');
+@font-face {
+    font-family: 'android';
+    src: url('../ex_desafio_site/imagens/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor01: #2FA866;
+    --cor02: #355C47;
+    --cor03: #4285F4;
+    --cor04: #366FC9;
+    --cor05: #3F516E;
+
+    --fonte-padrao: 'Radio Canada', Arial, Helvetica, sans-serif;
+    --fonte-android: 'android', sans-serif;
+    --fonte-links: Verdana, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #9eebc1;
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+}
+
+header {
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.286);
+    line-height: 3em;
+    background-image:linear-gradient(to top, #1f6740, #238b52, #2FA866, #3ec57b);
+    padding: 30px;
+    margin: auto;
+}
+
+nav {
+    background-color: #1f6740;
+    font-family: var(--fonte-links);
+    font-weight: bold;
+    text-align: left;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.281);
+    padding: 20px 10px 3px 0px;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: none;
+    font-size:small;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding: 3px 8px 3px 8px;
+    transition-duration: 0.5s;
+}
+nav > a:hover {
+    background-color:#a1c7b3;
+    color: var(--cor01);
+}
+
+h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor03);
+    text-shadow: 1px 1px 1px var(--cor05);
+}
+
+h3 {
+    font-family: var(--fonte-android);
+    color: var(--cor04);
+    background-image: linear-gradient(to right, #59b78359, #64b7895b, #7ac69c59, #bff6d76e);
+}
+
+main {
+    background-color: white;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.336);
+    margin: auto;
+    margin-bottom: 30px;
+    min-width: 320px;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+main p {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    line-height: 1.7em;
+    text-align: justify;
+    text-indent: 20px;
+    margin: 15px 0px;
+}
+
+main strong {
+    color:var(--cor02);
+    font-weight: bold;
+}
+
+main a {
+    color: var(--cor04);
+    font-weight: bold;
+    text-decoration: none;
+}
+main a:hover {
+    text-decoration: underline;
+    background-color: #4c685977;
+    color: var(--cor02);
+    padding: 2px 6px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+}
+
+div.video {
+background-color: var(--cor02);
+margin: 0px -20px;
+padding: 20px;
+padding-bottom: 55%;
+position: relative;
+}
+
+div.video > iframe {
+position: absolute;
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+}
+
+aside {
+    background-color: #dfe6f1;
+    font-family: var(--fonte-padrao);
+    text-indent: 10px;
+    text-align: justify;
+    margin-top: 20px;
+    padding:10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.308);
+    border-radius: 0px 0px 3px 3px;
+}
+
+aside > h4 { 
+    background-color: var(--cor04);
+    color: white;
+    font-weight: bold;
+    margin: -10px -10px 0px;
+    padding: 8px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2705\00A0\00A0';
+    list-style-position: inside;
+    line-height: 1.5em;
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor02);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: #adc6b7;
+    text-align: center;
+    margin: 20px 0px 5px 0px;
+    padding: 5px;
+}
+
+footer a {
+    color: #adc6b7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #71a5e0;
+}
+
+
